@@ -68,11 +68,7 @@ iconfont图标集合下载器
 
 2. **脚本部署流程**
 
-   访问
-
-   [111]: https://github.com/shenjingmayi/iconfont/releases
-
-   
+   访问[![releases](https://img.shields.io/badge/GitHub-releases-blue)](https://github.com/shenjingmayi/iconfont/releases)或[![releases](https://greasyfork.org/vite/assets/blacklogo96-CxYTSM_T.png)](https://greasyfork.org/zh-CN/scripts/527015)下载脚本
 
 3. **交互式操作**
 
