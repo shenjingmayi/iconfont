@@ -1,13 +1,16 @@
 // ==UserScript==
 // @name         iconfont图标集合下载器
-// @namespace    http://tampermonkey.net/
+// @namespace    https.com.github.shenjingmayi
 // @version      1.0
 // @description  自动获取整个iconfont集合的完整图标包，目前仅支持图标，不支持3D等其他类型。
 // @author       sjmy
 // @match        *://www.iconfont.cn/collections/detail*
-// @require      https://cdn.bootcss.com/jszip/3.2.2/jszip.min.js
+// @updateURL    https://github.com/shenjingmayi/iconfont/blob/main/iconfont%E5%9B%BE%E6%A0%87%E5%8C%85%E8%8E%B7%E5%8F%96.js
+// @downloadURL  https://github.com/shenjingmayi/iconfont/blob/main/iconfont%E5%9B%BE%E6%A0%87%E5%8C%85%E8%8E%B7%E5%8F%96.js
+// @require      https://cdn.jsdelivr.net/npm/jszip@3.2.2/dist/jszip.min.js  
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
+// @license      MIT
 // ==/UserScript==
 
 (function() {
@@ -61,7 +64,7 @@
         return panel;
     };
     const sanitizeFilename = (name) => {
-        return name.replace(/[\\/:"*?<> |]/g， '_');
+        return name.replace(/[\\/:"*?<> |]/g, '_');
     };
     const createAuthorLinkFile = (creator) => {
         const content = [
