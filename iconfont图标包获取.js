@@ -5,14 +5,12 @@
 // @description  自动获取整个iconfont集合的完整图标包，目前仅支持图标，不支持3D等其他类型。
 // @author       sjmy
 // @match        *://www.iconfont.cn/collections/detail*
-// @updateURL    https://github.com/shenjingmayi/iconfont/blob/main/iconfont%E5%9B%BE%E6%A0%87%E5%8C%85%E8%8E%B7%E5%8F%96.js
-// @downloadURL  https://github.com/shenjingmayi/iconfont/blob/main/iconfont%E5%9B%BE%E6%A0%87%E5%8C%85%E8%8E%B7%E5%8F%96.js
 // @require      https://cdn.jsdelivr.net/npm/jszip@3.2.2/dist/jszip.min.js  
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
 // @license      MIT
 // ==/UserScript==
-
+ 
 (function() {
     'use strict';
     const createControlPanel = () => {
@@ -132,7 +130,7 @@
                     link.download  = `${fileName}.zip`;
                     link.href  = URL.createObjectURL(content);
                     link.click();
-
+ 
                     btn.innerHTML  = '下载完成✔';
                     setTimeout(() => {
                         btn.innerHTML  = '重新下载';
