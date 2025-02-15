@@ -61,7 +61,7 @@
         return panel;
     };
     const sanitizeFilename = (name) => {
-        return name.replace(/[\\/:"*?<> |]/g, '_');
+        return name.replace(/[\\/:"*?<> |]/g， '_');
     };
     const createAuthorLinkFile = (creator) => {
         const content = [
